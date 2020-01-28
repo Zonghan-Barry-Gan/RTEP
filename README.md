@@ -1,5 +1,5 @@
 # RTEP
-A github to demonstrate workings of RTE project. 
+A github to demonstrate workings of Real Time Embedded (RTE) project at the University of Glasgow. 
 
 "Employ EMG as a method of user input to a gaming environment”
 
