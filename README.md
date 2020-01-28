@@ -14,7 +14,7 @@ Firstly we aim to hack simple, existing games as a proof of concept. We can then
 
 The methodology is to use two standard Ag/AgCl electrodes placed 20cm apart on the muscle.
 The signal from these electrodes is sent through a two stage amplifer, the first stage being the differential stage, 
-the second being a gain stage. The output of the amplifier is sent to an ADC and then passed to a Raspberry Pi for post-processing and game connection. 
+the second being a gain stage. The output of the amplifier is sent to an ADC and then passed to a Raspberry Pi via I2C data protocol for post-processing and game connection. 
 
 **Potential Uses**
 
