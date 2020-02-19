@@ -8,8 +8,11 @@
 
 #include <QBoxLayout>
 
-// #include "adcreader.h"
+#include "Iir.h"
+#include <Iir.h>
 
+// #include "adcreader.h"
+using namespace std;
 // class definition 'Window'
 class Window : public QWidget
 {
@@ -17,17 +20,22 @@ class Window : public QWidget
 	Q_OBJECT
 
 public:
+
+
 	Window(); // default constructor - called when a Window is declared without arguments
 
 	~Window();
 
-	void timerEvent( QTimerEvent * );
+     void timerEvent( QTimerEvent * );
 
 public slots:
 	void setGain(double gain);
 
 // internal variables for the window class
 private:
+
+
+
 	QwtKnob      *knob;
 	QwtPlot      *plot1;
 	QwtPlotCurve *curve1;
@@ -52,6 +60,9 @@ private:
 
 	double gain;
 	int count;
+
+
+
 
 //	ADCreader *adcreader;
 };

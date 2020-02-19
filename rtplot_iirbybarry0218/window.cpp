@@ -6,21 +6,16 @@
 #include <cmath>  // for sine stuff
 
 
-using namespace std;
-//set filter
-const int order = 40;
+ using namespace std;
+ //set filter
+ const int order = 40;
 
-// sampling rate here 1kHz as an example
-const float samplingrate = 1000;
+ // sampling rate here 1kHz as an example
+ const float samplingrate = 1000;
 
-
-FILE *florigin = NULL;
-FILE *flhp1 = NULL;
-Iir::Butterworth::HighPass<order> hp1;
-
-
-
-
+ FILE *florigin = NULL;
+ FILE *flhp1 = NULL;
+ Iir::Butterworth::HighPass<order> hp1;
 
 Window::Window() : gain(2), count(0)
 {
@@ -101,9 +96,6 @@ Window::Window() : gain(2), count(0)
     //create file to log data
     flhp1 = fopen("flhp1ed.dat","wt");
     florigin = fopen("origin.dat","wt");
-
-
-
 }
 
 Window::~Window() {
