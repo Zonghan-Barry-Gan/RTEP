@@ -1,1 +1,1 @@
-A simple ping pong game example in Qt
+This is a combination of GUI and signal controlled core. The Qkeypress event based kernel was removed and rewritten to be controlled by an external signal, eg. electromyographic signal (EMG). This is used for signal controlled game of emg for FES or other rehabilitation purpose
